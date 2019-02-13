@@ -1,6 +1,5 @@
 Character Level Random Sentence Generation using LSTM Model
 
-
 1. CREATE A VIRTUAL ENVIRONMENT USING CONDA:
 
 Conda create --name ea python=2.7
