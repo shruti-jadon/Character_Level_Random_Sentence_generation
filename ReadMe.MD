@@ -7,11 +7,13 @@ Conda create --name ea python=2.7
 2. Go to console run python main.py, it already have default filename and weight file. You can change it
 
 Approach:
-Considering example of algorithm mentioned in document, said Markov Chain, so I decided to use a Small LSTM model which is processing 100 words at one time. As, inside LSTM model Markov chain is used. It's possible to train this model in distributed environment on google cloud platform, as tf.estimator distributes this model appropriately to number of workers chosen. Similarly if the choice is to use this model as an application, its possible to do so, by putting it on ML engine on gcloud, or any other server.
+Random Sentence generation is one of the ways to see how our algorithm is learning. Natural Language Processing basic algorithms learning is based upon concept of Markov Chain, even NLP models eventually end up learning markov chain concepts but more efficiently. 
 
-For embeddings of words: currently I just put one hot encoding vector, its completely possible to use gensim/word2vec model, that will improve the mode as the context learnt will be much better.
+Over here we will be using a Small LSTM model which is processing 100 words at one time. It's possible to train this model in distributed environment on google cloud platform, as tf.estimator distributes this model appropriately to number of workers chosen. Similarly if the choice is to use this model as an application, its possible to do so, by putting it on ML engine on gcloud, or any other server.
 
-I didn't get chance to train this model for more than 5 epochs, I am hoping that it will improve once it has been trained for more than 100 epochs, also I trimmed the dataset, just to check code-wise my model is working or not.
+For embeddings of words: currently we are just using one hot encoding vector, its completely possible to use gensim/word2vec model, that will improve the mode as the context learnt will be much better.
+
+I didn't get chance to train this model for more than 5 epochs, I am hoping that it will improve once it has been trained for more than 100 epochs.
 
 Steps in approach:
 ---------------------
