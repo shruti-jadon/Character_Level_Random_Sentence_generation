@@ -1,4 +1,4 @@
-Character Level Random Sentence Generation using LSTM Model
+# Character Level Random Sentence Generation using LSTM Model
 
 1. CREATE A VIRTUAL ENVIRONMENT USING CONDA:
 
